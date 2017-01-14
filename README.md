@@ -11,7 +11,14 @@ scratch.
 
 Class projects will include the creation of a Make School set of UI elements.
 Students will all contribute to the library using Github. To goal for each
-student is to provide at least on new and unique UI element to the library. 
+student is to provide at least on new and unique UI element to the library.
+
+## Goals
+
+- Use CGRect and it's methods to build custom UI controls from Views
+- Build flexible UI controls using Subclasses while exploring initializers
+- Modify and architect UI elements that are flexible using: @IBDesignable and
+@IBInspectible
 
 ## Rough Outline
 
