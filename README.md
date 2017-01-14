@@ -1,8 +1,21 @@
-# iOS UI Desing 
+# iOS UI Design
 
-## Rough Outline 
+The goal of this class will not be to build whole applications. instead the
+focus will be digging into UIView and all of the UI elements built from UIView
+to get a deeper understanding into how they work. Then to apply these ideas
+to build new custom UI elements.
 
-A choose your own adventure class covering UIKit components and more. 
+The end product of the class will be a library of UI elements that improve on
+and customize the existing UI elements, and building new UI elements from
+scratch.
+
+Class projects will include the creation of a Make School set of UI elements.
+Students will all contribute to the library using Github. To goal for each
+student is to provide at least on new and unique UI element to the library. 
+
+## Rough Outline
+
+A choose your own adventure class covering UIKit components and more.
 
 - UIKit overview, a look at each component
     - UILabel
@@ -37,39 +50,37 @@ A choose your own adventure class covering UIKit components and more.
     - UITabBar
     - UITabBarItem
     - UISearchBar
-    - Todo 
-        - Arrange these into groups 
-    - Challenges 
+    - Todo
+        - Arrange these into groups
+    - Challenges
         - Build simple apps that make use of each of the components
         - Build simple apps that combine two components
             - ScrollView segmented control
             - ScrollView Button
             - Container view segmented control
-            - Switch UIview 
+            - Switch UIview
             - ...
 - Review Creating custom views
     - Frame, Bounds, Center
     - UILayer
-    - Challenges 
+    - Challenges
         - Draw some boxes
         - Calculator layout
-        - 
-- Animation 
+        -
+- Animation
     - UIView Animation
     - Challenges
         - Animate some stuff in a view controller make an intersting presentation
         - Animate a loading progress bar kind of thing
         - Animate some data
-- Custom Views 
+- Custom Views
     - Subclassing UIView and others
     - @IBDesignable
     - @IBInspectible
     - Drawing views and subviews
-    - Challenges 
+    - Challenges
         - Make a contribution to the Custom view lib
         - Make a custom view that displays data
 - Core Graphics
-    - Drawing in veiws 
+    - Drawing in veiws
     - UIBezierPath
- 
-    
