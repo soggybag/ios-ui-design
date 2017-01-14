@@ -20,6 +20,36 @@ student is to provide at least on new and unique UI element to the library.
 - Modify and architect UI elements that are flexible using: @IBDesignable and
 @IBInspectible
 
+## Progress
+
+Progress in the class at your own pace. Be sure to look at each lesson. The
+material looks new or you feel it would be good to review, then follow the
+lesson from beginning to end.
+
+If you feel you understand the material in a lesson skip to the Challenges. Use
+the challenges as a **check for understanding**. You can be sure that you
+understand the material if you can complete the challenges.
+
+_You can also look at the challenges as interview questions you might be asked._
+
+When you feel you understand the material from one lesson move on to the next.
+
+If you see an opportunity to create an interesting or useful class that can be
+contributed to the Make School UI Library feel free to stop and develop that
+further. 
+
+## Lessons
+
+- UIView : UIView is the base class for all visual elements. It defines a
+rectangular area of the screen in which you can draw anything.
+  - [00-uiview](00-uiview)
+- Subclassing UIView : To make your own UI elements you will create subclasses
+of UIView.
+  - [01-subclass-uiview](01-subclass-uiview)
+-
+
+-------------------------------
+
 ## Rough Outline
 
 A choose your own adventure class covering UIKit components and more.
