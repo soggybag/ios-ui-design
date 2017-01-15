@@ -111,16 +111,7 @@ class ViewController: UIViewController {
 }
 ```
 
-
-
-
-
-
 Note! You can **not** reference `self` in a subclass until after you call
 `super.init()`.
 
-Note! You **can** call other initializers before calling `super.init()` this
-
-Understanding the previous two points will get you out of problems where you
-have to duplicate code across several initializers when working with classes
-like: UIViewController, and UIView.
+Note! You **can** call other initializers before calling `super.init()`
