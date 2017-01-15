@@ -36,7 +36,7 @@ When you feel you understand the material from one lesson move on to the next.
 
 If you see an opportunity to create an interesting or useful class that can be
 contributed to the Make School UI Library feel free to stop and develop that
-further. 
+further.
 
 ## Lessons
 
@@ -46,7 +46,9 @@ rectangular area of the screen in which you can draw anything.
 - Subclassing UIView : To make your own UI elements you will create subclasses
 of UIView.
   - [01-subclass-uiview](01-subclass-uiview)
--
+- *** Initializers : Swift Initializers demystified
+- *** Composing Views : Using UILabel and UIButton inside your UIView Subclass
+- 
 
 -------------------------------
 
