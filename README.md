@@ -1,17 +1,16 @@
 # iOS UI Design
 
-The goal of this class will not be to focus UIView and building UI elements from UIView. 
-UIView is the basis for all of the built in UI widgets (UIButton, UILabel, UISwitch etc.)
-Along the way we take a look at the built in UI elements to get a better understanding 
-of how they work, Swift, UIKit, and OOP. 
+The goal of this class will be to focus on building UI elements. 
+Along the way we will take a look at the built in UI elements to get a better understanding 
+of how they work. 
 
-The end product of the class will be a library of UI elements that improve on
-and customize the existing UI elements, and building new UI elements from
-scratch.
+The end product of the class will be a library of UI elements that will customize the existing 
+UI elements, and build new UI elements from scratch.
 
 Class projects will include the creation of a Make School set of UI elements.
-Students will all contribute to the library using Github. To goal for each
-student is to provide at least on new and unique UI element to the library.
+Students will all contribute to the library using Github. The goal for each
+student is to provide at least on new and unique UI element to the library. Students will 
+also create their own customized UI elements that can be used in their own projects. 
 
 ## Goals
 
@@ -38,46 +37,40 @@ If you see an opportunity to create an interesting or useful class that can be
 contributed to the Make School UI Library feel free to stop and develop that
 further.
 
-## Lessons
-
-- UIView : UIView is the base class for all visual elements. It defines a
-rectangular area of the screen in which you can draw anything.
-  - [00-uiview](00-uiview)
-- Subclassing UIView : To make your own UI elements you will create subclasses
-of UIView.
-  - [01-subclass-uiview](01-subclass-uiview)
-- *** Initializers : Swift Initializers demystified
-- *** Composing Views : Using UILabel and UIButton inside your UIView Subclass
-- 
-
--------------------------------
-
-## Rough Outline
+## Outline
 
 A choose your own adventure class covering UIKit components and more.
 
 - UIView
-    - Coordinates
-        - frame, bounds, and center
-        - CGPoint, CGRect, and UIColor
-- Subclassing
-    - Initializers, designated, and convenience. 
-    - Protocols and protocol extensions
-- Review Creating custom views
-    - Frame, Bounds, Center
-    - Subviews
+    - frame, bounds, and center
+    - CGPoint, CGRect, and UIColor
+- Math break
+    - Addition, Subtraction, multiplication, and division
+    - Math and Rectangles
 - Custom Views
     - Subclassing UIView and others
+        - Initializers, designated, and convenience. 
+        - Protocols and protocol extensions
     - @IBDesignable
     - @IBInspectible
-    - Drawing views and subviews
+- Transforms 
+    - CGAffineTransform
+- Handling Touch Events
+    - Touches, began, moved, ended. 
+- Math break 
+    - radians, sin, cos, and atan
+    - Math and circles
+- Drawing 
+    - Layers 
+    - Drawing context and draw(_ rect:)
+- Drawing with paths
+    - UIBezierPath
 - UIControl 
     - Subclassing UIControl
     - Target Action mechanism
+        - sendAction, addTarget
     - Interface Builder Attributes 
-- Drawing 
-    - Layers 
-    - Graphics 
+    - Tracking touches began, continue, and ended. 
 - UIKit overview, a look at each component
     - Challenges
         - Build simple apps that make use of each of the components
@@ -86,29 +79,35 @@ A choose your own adventure class covering UIKit components and more.
             - ScrollView Button
             - Container view segmented control
             - Switch UIview
-            - ...
-
-        -
 - Animation
     - UIView Animation
     - Challenges
         - Animate some stuff in a view controller make an intersting presentation
         - Animate a loading progress bar kind of thing
         - Animate some data
-
 - Core Graphics
-    - Drawing in veiws
+    - Drawing in views
     - UIBezierPath
 
+## Projects and UI elements to build
 
-
-
-## Things to make
-
-- Thermostat 
-- Knob or dial 
 - Progress bar
+    - Design a progress bar
+- Thermostat 
+    - Draw a good thermostat
+    - Fills in and changes color
+- Knob or dial 
+    - Design a nifty looking knob or dial
 - Loading animation 
-- 
-
+- Counter (has +, -, and a number)
+- Toggle Switch 
+- Radio button (segmented control)
+- Waves
+- Slider value
+- Graphs and Charts
+    - Bar graph
+    - Line graph
+    - Pie chart
+- Clock
+- Compass
 
