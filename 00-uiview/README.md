@@ -38,6 +38,46 @@ Follow this tutorial it has some built in challenges at the end.
 
 [https://www.weheartswift.com/uiview-fundamentals/](https://www.weheartswift.com/uiview-fundamentals/)
 
+## Notes 
+
+The tutorial example above was written in an earlier version of Swift. A few of the functions have 
+changed. 
+
+**CGAffineTransform**
+
+CGAffineTransform() can be initialized with rotation, scale, or translate. 
+
+`let rotate = CGAffineTransform(rotationAngle: CGFloat)`
+
+`let scale = CGAffineTransform(scaleX: CGFloat, y: CGFloat)`
+
+`let translate = CGAffineTransform(translationX: CGFloat, y: CGFloat)`
+
+**CGAffineTransformConcat**
+
+This has been replaced with member methods. Instead of creating new transforms and merging with concat
+you'll call a memeber method to apply the transform like this: 
+
+```
+let scale = CGAffineTransform(scaleX: 0.5, y: 0.5)
+let scaleRotate = scale.rotated(by: CGFloat(M_PI_2 / 2))
+let scaleRotatetranslate = scaleRotate.translatedBy(x: 100, y: 40)
+```
+
+## Challenges 
+
+The tutorial has some built in challenges solve these. Then solve them again with these goals: 
+
+- Solve the challenges with layers. Each challenge should be built in a single UIView with elements
+drawn on sublayers. 
+- Use IBDesignable to set properties that control how the elements appear. 
+    - For the target set the number of rings
+    - The width of each ring
+    - Ring color
+- Look up CAGradientLayer. Use this to make a gradient layer. 
+    - Use IBDesignable on your view containing the gradient layer. 
+    - Use IBInspectable to set the starting and ending color for the gradient. 
+
 ## Conclusion
 
 After reading the material and working through the tutorial and it's challenges you should have a 
