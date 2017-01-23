@@ -41,9 +41,52 @@ further.
 
 A choose your own adventure class covering UIKit components and more.
 
-- UIView
-    - frame, bounds, and center
-    - CGPoint, CGRect, and UIColor
+- [Intro](./00-intro) - Introduction/Review of UIView
+- [Frame, Bounds, and Center](./01-frame-bounds-center-color) - Managing display on the screen.
+    - Closer look at 
+        - CGFloat, CGPoint, CGSize, CGRect, UIColor
+        - frame, bounds, center
+- [Layers](./02-layers) - Where the pixels really live. 
+    - A closer look at CALayer
+        - CAGradientLayer, CATextLayer
+- [Inheritance and Composition](./03-subclass-composition) -   
+    - A look at how systems are combined in Swift
+- [Swift Initializers](./04-initializers)
+    - Designated and Convenience initializers
+    - Initializing properties
+    - Initializing a subclass and super class
+- [Interaction](./05-interaction) 
+    - Touch events and gestures
+- [UIControl](./06-uicontrol)
+    - Target Action pattern
+- 
+    
+   
+
+## Projects and UI elements to build
+
+- Progress bar
+    - Design a progress bar
+- Thermostat 
+    - Draw a good thermostat
+    - Fills in and changes color
+- Knob or dial 
+    - Design a nifty looking knob or dial
+- Loading animation 
+- Counter (has +, -, and a number)
+- Toggle Switch 
+- Radio button (segmented control)
+- Waves
+- Slider value
+- Graphs and Charts
+    - Bar graph
+    - Line graph
+    - Pie chart
+- Clock
+- Compass
+  
+----
+
 - Math break
     - Addition, Subtraction, multiplication, and division
     - Math and Rectangles
@@ -88,26 +131,4 @@ A choose your own adventure class covering UIKit components and more.
 - Core Graphics
     - Drawing in views
     - UIBezierPath
-
-## Projects and UI elements to build
-
-- Progress bar
-    - Design a progress bar
-- Thermostat 
-    - Draw a good thermostat
-    - Fills in and changes color
-- Knob or dial 
-    - Design a nifty looking knob or dial
-- Loading animation 
-- Counter (has +, -, and a number)
-- Toggle Switch 
-- Radio button (segmented control)
-- Waves
-- Slider value
-- Graphs and Charts
-    - Bar graph
-    - Line graph
-    - Pie chart
-- Clock
-- Compass
 

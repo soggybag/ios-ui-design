@@ -401,19 +401,23 @@ Try some challenges. The end goal will be to design and create your own custom U
 This will require some work the challenges here will start by builing views that draw your 
 interface elements. 
 
-Choose three of the following and design them with Sketch
-
-- Bargraph
-- Counter 
-- Progress bar
-- Progress spinner
-- Thermometer style graph
-- Redesign the Segemented controller
-- Custom button
-- Custom slider 
-- Custom app navbar 
-- Custom check box
-- Custom Switch
+- Recreate three of the previous example using a UIView subclass
+    - Give each an initializer that allow features to be set as parameters of the initializer. 
+    - Set up each class so that it can be initialized via Storyboard with sensible default parameters.
+- Choose three of the following and design them with Sketch
+    - Bargraph
+    - Counter 
+    - Progress bar
+    - Progress spinner
+    - Thermometer style graph
+    - Redesign the Segemented controller
+    - Custom button
+    - Custom slider 
+    - Custom app navbar 
+    - Custom check box
+    - Custom Switch
+- Using your designs create the three classes that draw each of the UI elements you desinged. 
+    - Don't worry about functionality yet we'll work on that later. 
 
 
 
