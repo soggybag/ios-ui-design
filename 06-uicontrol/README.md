@@ -48,7 +48,6 @@ languages you might rephrase that as the switch sends an event to all of it's li
 ## UIResponder
 
 
-
 ## UIControl or UIRepsonder?
 
 
