@@ -8,23 +8,38 @@
 
 import UIKit
 
-class CirclesView: UIView {
-
+class CirclesView: UIControl {
     
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    // Make some layers
+    let innerCircle = CALayer()
+    let container = CALayer()
+    let outerCircle = CALayer()
+    let ringLayer = CAShapeLayer()
+    
+    var ringAnimation: CABasicAnimation! = nil
+    
+    
+    // MARK: - Init
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
-        // Make some layers
-        let container = CALayer()
-        let innerCircle = CALayer()
-        let outerCircle = CALayer()
+        setupLayers()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         
+        setupLayers()
+    }
+    
+    
+    func setupLayers() {
         // Stack the layers
         layer.addSublayer(container)
         container.addSublayer(innerCircle)
         container.addSublayer(outerCircle)
+        container.addSublayer(ringLayer)
         
         // Find the min dimension
         let w = bounds.width
@@ -46,15 +61,82 @@ class CirclesView: UIView {
         outerCircle.borderColor = UIColor.white.cgColor
         outerCircle.borderWidth = 10
         outerCircle.cornerRadius = outerCircle.bounds.width / 2
+        
+        // Shadow on outer circle
+        /*
         outerCircle.shadowRadius = 4
         outerCircle.shadowColor = UIColor.black.cgColor
         outerCircle.shadowOpacity = 1
         outerCircle.shadowOffset = CGSize.zero
+        */
+        
+        // shadow on view layer
+        layer.shadowRadius = 4
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 1
+        layer.shadowOffset = CGSize.zero
         
         // Draw the inner circle
         innerCircle.frame = container.bounds.insetBy(dx: 30, dy: 30)
         innerCircle.backgroundColor = UIColor.red.cgColor
         innerCircle.cornerRadius = innerCircle.bounds.width / 2
+        
+        // Draw ring
+        ringLayer.path = CGPath(ellipseIn: outerCircle.bounds.insetBy(dx: 5, dy: 5), transform: nil)
+        ringLayer.strokeColor = UIColor.red.cgColor
+        ringLayer.lineWidth = 10
+        ringLayer.fillColor = UIColor.clear.cgColor
+    }
+    
+    
+    
+    // MARK: - Handle interaction
+    
+    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        super.beginTracking(touch, with: event)
+        
+        forward()
+        
+        return true
+    }
+    
+    override func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        super.continueTracking(touch, with: event)
+        
+        return true
+    }
+    
+    override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+        super.endTracking(touch, with: event)
+        
+        reverse()
+    }
+    
+    func forward() {
+        let a = CABasicAnimation(keyPath: "strokeEnd")
+        a.duration = 2
+        a.fromValue = 0
+        a.toValue = 1
+        ringLayer.add(a, forKey: "strokeEnd")
+    }
+    
+    func reverse() {
+        let a = CABasicAnimation(keyPath: "strokeEnd")
+        a.duration = 2
+        a.fromValue = ringLayer.presentation()?.value(forKeyPath: "strokeEnd")
+        a.duration = 2
+        a.toValue = 0
+        ringLayer.removeAllAnimations()
+        ringLayer.add(a, forKey: "strokePath")
+    }
+    
+
+    
+    
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
         
     }
     

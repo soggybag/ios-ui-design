@@ -23,7 +23,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xE5-Mz-D6e" customClass="CirclesView" customModule="CirclesThingForJake" customModuleProvider="target">
                                 <rect key="frame" x="107" y="487" width="160" height="160"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.32756314212328769" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="LPQ-70-Se4"/>
                                     <constraint firstAttribute="width" constant="160" id="N9W-mS-RMA"/>
