@@ -13,15 +13,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        makeGradient()
+        // makeGradient()
         // makeCheckBoard()
-        makeCounter()
+        // makeCounter()
+        // makeRectangles()
+        makeGrad()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func makeGrad() {
+        let g = GradView(frame: view.bounds)
+        view.addSubview(g)
+    }
+    
+    
+    func makeRectangles() {
+        //
+        let r = RectangleView(frame: view.bounds.insetBy(dx: 20, dy: 20))
+        view.addSubview(r)
+    }
+    
     
     func makeCheckBoard() {
         let w = view.bounds.width - 40

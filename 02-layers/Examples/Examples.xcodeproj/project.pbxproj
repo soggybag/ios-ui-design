@@ -15,6 +15,8 @@
 		D86DBA1F1E39AE360048148C /* CheckerBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86DBA1E1E39AE360048148C /* CheckerBoard.swift */; };
 		D86DBA211E39B7940048148C /* CounterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86DBA201E39B7940048148C /* CounterWidget.swift */; };
 		D86DBA231E39C3610048148C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86DBA221E39C3610048148C /* GradientView.swift */; };
+		D86DBA271E39CD360048148C /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86DBA261E39CD360048148C /* RectangleView.swift */; };
+		D8E7557B1E39D07100D55098 /* GradView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E7557A1E39D07100D55098 /* GradView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		D86DBA1E1E39AE360048148C /* CheckerBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckerBoard.swift; sourceTree = "<group>"; };
 		D86DBA201E39B7940048148C /* CounterWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterWidget.swift; sourceTree = "<group>"; };
 		D86DBA221E39C3610048148C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D86DBA261E39CD360048148C /* RectangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		D8E7557A1E39D07100D55098 /* GradView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			children = (
 				D86DBA0C1E39AE150048148C /* AppDelegate.swift */,
 				D86DBA0E1E39AE160048148C /* ViewController.swift */,
+				D8E7557A1E39D07100D55098 /* GradView.swift */,
+				D86DBA261E39CD360048148C /* RectangleView.swift */,
 				D86DBA1E1E39AE360048148C /* CheckerBoard.swift */,
 				D86DBA201E39B7940048148C /* CounterWidget.swift */,
 				D86DBA221E39C3610048148C /* GradientView.swift */,
@@ -148,7 +154,9 @@
 			files = (
 				D86DBA1F1E39AE360048148C /* CheckerBoard.swift in Sources */,
 				D86DBA0F1E39AE160048148C /* ViewController.swift in Sources */,
+				D86DBA271E39CD360048148C /* RectangleView.swift in Sources */,
 				D86DBA231E39C3610048148C /* GradientView.swift in Sources */,
+				D8E7557B1E39D07100D55098 /* GradView.swift in Sources */,
 				D86DBA211E39B7940048148C /* CounterWidget.swift in Sources */,
 				D86DBA0D1E39AE160048148C /* AppDelegate.swift in Sources */,
 			);
@@ -312,6 +320,7 @@
 				D86DBA1D1E39AE160048148C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -60,6 +60,7 @@ class CounterWidget: UIView {
         number.string = "3"
         number.fontSize = 80
         number.alignmentMode = kCAAlignmentCenter
+        
         layer.addSublayer(number)
     }
 
