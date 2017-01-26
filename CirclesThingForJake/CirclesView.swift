@@ -113,11 +113,19 @@ class CirclesView: UIControl {
     }
     
     func forward() {
+        ringLayer.strokeEnd = 0
+        
+        UIView.animate(withDuration: 2) { 
+            self.ringLayer.strokeEnd = 1
+        }
+        
+        /*
         let a = CABasicAnimation(keyPath: "strokeEnd")
         a.duration = 2
         a.fromValue = 0
         a.toValue = 1
         ringLayer.add(a, forKey: "strokeEnd")
+        */
     }
     
     func reverse() {

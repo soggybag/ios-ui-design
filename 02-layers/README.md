@@ -72,10 +72,13 @@ Use the ideas from the last lesson to build some views that are made of layers.
     - ![Challenge 3](./Challenge-3.png)
 - Concentric rectangles change the hue and saturation. 
     - ![Challenge 4](./Challenge-4.png)
-- Imagine this as a UI element that let's us select a number. 
+- Imagine this as a UI element that let's us select a number. Note: Probably best to use UILabel for
+    the text elements.
     - ![Challenge 5](./Challenge-5.png)
-
-
+- Add a gradient background. 
+    - ![Challenge 6](./Challenge-6.png)
+- Make a couple circle and add a shadow.
+    - ![Challenge 7](./Challenge-7.png)
 
 
 
