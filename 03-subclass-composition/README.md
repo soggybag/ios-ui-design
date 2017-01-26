@@ -1,19 +1,31 @@
 # Subclassing and Composition
 
-When one object owns another object we call it composition. When a class
-declares another class as it's super class we call that inheritance.
-Swift also offers protocols and protocol extensions as a thrid option. 
+The best strategy for creating complex systems is to break them down into smaller less complex 
+components. Larger more complex systems are harder to debug, less portable, and less flexible. 
+When have the opportunity you should always try break your structures into smaller parts that 
+work together. 
 
-These are three methods you will use to built more complex systems from smaller
+Swift provides several different ways to break up large monolithic classes. Composition, 
+Inheritence, and Protocol Extensions. 
+
+- When one object owns another object we call it **composition**. 
+- When a class declares another class as it's super class we call that **inheritance**.
+- Classes can also extend their functionality via **Protocol Extensions**.  
+
+These are three methods you will use to build more complex systems from smaller
 less complex systems.
 
 Each of these two has it's place. Inheritance tends to sound like the right
-way to do things. Object oriented programming is built on inheritance.
+way to do things. Object oriented programming is built on inheritance. But inheritence has 
+some drawbacks. Often super classes will tend to aggregate functionality and become bloated. 
 
 In practice composition is easier and more flexible. The saying "Favor composition over inheritance"
 Gets it own wikipedia page:
 
 https://en.wikipedia.org/wiki/Composition_over_inheritance
+
+Protcol extensions are new and unique to Swift. These are easy and flexible. Protocol extensions 
+allow you to add new methods to a class, they do not allow you add new properties. 
 
 ## Inheritance/Subclass
 
@@ -26,7 +38,7 @@ functionality of core UIKit classes like:
 - CALayer
 
 To go even further some classes must be subclassed, they can not be instantiated directly. The only
-way to create an instance is by defining a subclass. 
+way to create an instance is by defining a subclass.
 
 ## Tutorial 
 
@@ -34,12 +46,25 @@ Follow the tutorial here:
 
 - https://github.com/soggybag/swift-inheritance
 
+Open the first playground. Follow the notes in the comments. Solve the problems. Move to the next 
+playground. Each playground shows the solution to the previous problem. You can look ahead if you 
+get stuck. 
+
+## Stop and Reflect 
+
+- What were the problems illustrated here and how were they solved?
+- What different solutions were provided? 
+- Did you find your own solutions different from the example solutions? 
+- Can you think of opportunities in your own projects where you have used these ideas? 
+- Can you think of any places in your own projects where you could apply these ideas?
+
 ## Thoughts 
 
-OOP is a requirement to work UIKit. Many classes are meant to be subclassed. Subclassing works well 
-for adding core functionality to objects. Subclassing has the limitation that a class may 
+OOP is a requirement to work UIKit. Many classes are meant to be subclassed. To gain basic 
+UIKit functionality you will be required to inherit from one of the built in classes. 
+Subclassing has the limitation that a class may 
 inherit from only one super class. As features become more granular inheritance becomes less 
-advantagous. The playground examples illustrate this. 
+advantagous. The playground examples illustrate this.
 
 Protocols and Protocol extensions work well for composing functionality from multiple 
 sources. A limit of protocol extensions is they may not contain stored properties. That is you 

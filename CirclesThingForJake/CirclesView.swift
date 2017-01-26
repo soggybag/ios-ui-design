@@ -78,13 +78,14 @@ class CirclesView: UIControl {
         
         // Draw the inner circle
         innerCircle.frame = container.bounds.insetBy(dx: 30, dy: 30)
-        innerCircle.backgroundColor = UIColor.red.cgColor
+        innerCircle.backgroundColor = UIColor.white.cgColor
         innerCircle.cornerRadius = innerCircle.bounds.width / 2
         
         // Draw ring
         ringLayer.path = CGPath(ellipseIn: outerCircle.bounds.insetBy(dx: 5, dy: 5), transform: nil)
         ringLayer.strokeColor = UIColor.red.cgColor
         ringLayer.lineWidth = 10
+        ringLayer.strokeEnd = 0
         ringLayer.fillColor = UIColor.clear.cgColor
     }
     
@@ -115,24 +116,34 @@ class CirclesView: UIControl {
     func forward() {
         ringLayer.strokeEnd = 0
         
+        /*
         UIView.animate(withDuration: 2) { 
             self.ringLayer.strokeEnd = 1
         }
+        */
         
-        /*
+        UIView.animate(withDuration: 0.25) { 
+            self.innerCircle.backgroundColor = UIColor.red.cgColor
+        }
+        
+        
         let a = CABasicAnimation(keyPath: "strokeEnd")
         a.duration = 2
         a.fromValue = 0
         a.toValue = 1
         ringLayer.add(a, forKey: "strokeEnd")
-        */
     }
     
     func reverse() {
+        UIView.animate(withDuration: 0.25) { 
+            self.innerCircle.backgroundColor = UIColor.white.cgColor
+        }
+        
         let a = CABasicAnimation(keyPath: "strokeEnd")
-        a.duration = 2
-        a.fromValue = ringLayer.presentation()?.value(forKeyPath: "strokeEnd")
-        a.duration = 2
+        let fromValue = ringLayer.presentation()?.value(forKeyPath: "strokeEnd") as! CGFloat
+        let duration = 2 * fromValue
+        a.fromValue = fromValue
+        a.duration = CFTimeInterval(duration)
         a.toValue = 0
         ringLayer.removeAllAnimations()
         ringLayer.add(a, forKey: "strokePath")

@@ -80,5 +80,8 @@ Use the ideas from the last lesson to build some views that are made of layers.
 - Make a couple circle and add a shadow.
     - ![Challenge 7](./Challenge-7.png)
 
+## More information
+
+- https://www.raywenderlich.com/90488/calayer-in-ios-with-swift-10-examples
 
 
