@@ -131,6 +131,7 @@ class CirclesView: UIControl {
         a.duration = 2
         a.fromValue = 0
         a.toValue = 1
+        
         ringLayer.add(a, forKey: "strokeEnd")
     }
     
