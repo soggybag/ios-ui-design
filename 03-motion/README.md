@@ -63,5 +63,5 @@ animate an object tat has constraints applied to it there a couple strategies yo
 - ![UIView Animate challenge 2](uiview-animation-2.gif)
 - ![UIView Animate challenge 3](uiview-animation-3.gif)
 - ![UIView Animate challenge 4](uiview-animation-4.gif)
-- ![UIView Animate challenge 5](uiview-animation-6.gif)
+- ![UIView Animate challenge 5](uiview-animation-5.gif)
 
