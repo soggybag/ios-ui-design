@@ -65,3 +65,17 @@ animate an object tat has constraints applied to it there a couple strategies yo
 - ![UIView Animate challenge 4](uiview-animation-4.gif)
 - ![UIView Animate challenge 5](uiview-animation-5.gif)
 
+## Project Challenge
+
+Take the ideas here and apply them to an iOS project you are working on. There several places you 
+can make use of these ideas. 
+
+- Animate the elements one or more view controller screens. Animate the content elements into view
+one at a time. You can use the order you'd like your users to recognize them. This can help 
+people understand how to use the screen.
+    - Choose a view controller and animate each of the elements onto the screen. 
+- Create an onboarding animation.
+    - Use UIpageViewController to create instructions or onboarding for an existing app. 
+    - Animate the elements on each "page". 
+    
+
