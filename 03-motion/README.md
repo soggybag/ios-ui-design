@@ -16,20 +16,14 @@ Generally speaking you will
 - Draw an object.
     - Imagine lines be being drawn, and shapes that morph. 
 - Cycle through frames or video.
-    - Imagine complex shapes like characters or detailed objects. 
+    - Imagine a flipbook of images each shown in succession. 
 
-- Motion: Slide, Fade
-    - These can with view properties
-        - center, x and y
-        - frame, x, y, width, and height
-        - bounds, x, y, width, and height
-            - In most cases you will not want to animate bounds!
-        - alpha 
-        - backgroundColor
-- Motion: Rotation and Scale 
-    - Use CGAffineTransform with this you can scale, rotate, and translate an object. If you are 
-    animating an object and need 
-    
+The section will focus on UIView.animate(). This method has a few options that allow you to animate
+most to things you will want to animate. It also provides a simple interface that easy to work with. 
+
+Here is a link to some video tutorials: 
+
+- https://www.youtube.com/watch?v=f1OWrFO_ayQ&list=PLoN_ejT35AEhGkIbBFjn6ACfNfIyQa4Od&index=9
 
 ## UIView Animation
 
@@ -56,7 +50,7 @@ that automatically set the size and position of an object on the screen. What ha
 system tries to position that object somewhere else? This can be a problem. When you need to 
 animate an object tat has constraints applied to it there a couple strategies you can consider: 
 
-- Animate the constraint rather than the object! 
+- Animate the constraint rather than the object. 
 - Don't use constraints, size and position your object programatically. 
 
 ### UIView.animate() Examples 
@@ -65,21 +59,9 @@ animate an object tat has constraints applied to it there a couple strategies yo
 
 ### UIView.animate() Challenges 
 
-> A series of animated gifs or an Xcode project that illustrates an example
-
-## UIViewPropertyAnimator
-
-
-
-## CABasicAnimation 
-
-If you can't animate a property with UIView.animate() you can probably animate it with 
-CABasicAnimation. 
-
-## Challenges 
-
-- Make a loading screen
-- Make a landscape
-- Animate a progress bar
-- 
+- ![UIView Animate challenge 1](uiview-animation-1.gif)
+- ![UIView Animate challenge 2](uiview-animation-2.gif)
+- ![UIView Animate challenge 3](uiview-animation-3.gif)
+- ![UIView Animate challenge 4](uiview-animation-4.gif)
+- ![UIView Animate challenge 5](uiview-animation-6.gif)
 
