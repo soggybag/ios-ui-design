@@ -22,6 +22,17 @@ class CircleView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        setup()
+    }
+
+    
+    func setup() {
         let c = CGPoint(x: bounds.midX, y: bounds.midY)
         circle = UIBezierPath(arcCenter: c, radius: bounds.midX, startAngle: 0, endAngle: CGFloat(M_PI * 2), clockwise: true)
         pathLayer = CAShapeLayer()
@@ -32,10 +43,6 @@ class CircleView: UIView {
         pathLayer.fillColor = UIColor.clear.cgColor
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
