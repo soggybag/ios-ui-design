@@ -64,6 +64,8 @@ animate an object tat has constraints applied to it there a couple strategies yo
 - ![UIView Animate challenge 3](uiview-animation-3.gif)
 - ![UIView Animate challenge 4](uiview-animation-4.gif)
 - ![UIView Animate challenge 5](uiview-animation-5.gif)
+    - This last example was created by anmating only the frame property! I almost exclusively used
+    CGRect methods: insetBy() and offsetBy().
 
 ## Project Challenge
 
@@ -77,5 +79,14 @@ people understand how to use the screen.
 - Create an onboarding animation.
     - Use UIpageViewController to create instructions or onboarding for an existing app. 
     - Animate the elements on each "page". 
-    
+- Try and recreate an animation from an app or design you've seen or used. start simple. We haven't 
+covered all of the available techniques for drawing and animation yet, so somethings may not be 
+possible with UIView.animate() alone. Stick with tools we have covered so far:
+    - CALayer, and CAGradient layer. Use these for adding borders, rounding corners, and adding
+    gradients
+    - UIView.animate(), stick to the properties covered so far: 
+        - frame, bounds, center - move size and position
+        - backgroundColor - color
+        - alpha - transparency
+        - transform - rotate, scale, and translate (move)
 
