@@ -9,7 +9,7 @@ features UIView can detect user interaction and respond by changing it's appeara
 
 Read to the end of 'Alternatives to Subclassing'. 
 
-[https://developer.apple.com/reference/uikit/uiview](https://developer.apple.com/reference/uikit/uiview)
+[https://developer.apple.com/reference/uikit/uiview#1652896](https://developer.apple.com/reference/uikit/uiview#1652896)
 
 Important points 
 
