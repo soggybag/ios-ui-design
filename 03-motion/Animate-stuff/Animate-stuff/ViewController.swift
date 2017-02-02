@@ -37,10 +37,11 @@ class ViewController: UIViewController {
             box.alpha = 0
             let delay = TimeInterval(i) * 0.33
             let rotate = CGAffineTransform(rotationAngle: CGFloat(M_PI / 2))
-            let scaleAndRotate = rotate.scaledBy(x: 0.25, y: 0.25)
+            let scaleAndRotate = rotate.scaledBy(x: 0.05, y: 0.05)
             box.transform = scaleAndRotate
             
-            UIView.animate(withDuration: 3, delay: delay, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            // UIView.animate(withDuration: 0.7, delay: delay, options: [.], animations: {
+            UIView.animate(withDuration: 0.5, delay: delay, usingSpringWithDamping: 0.6, initialSpringVelocity: 0, options: [], animations: {
                 box.center.y = y
                 box.alpha = 1
                 box.transform = CGAffineTransform.identity

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IL2-1G-GS2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Foa-3n-ald">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -138,6 +138,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HqG-ZN-ISS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2458" y="106"/>
+        </scene>
+        <!--View Controller6-->
+        <scene sceneID="sFr-oo-VLV">
+            <objects>
+                <viewController id="Foa-3n-ald" customClass="ViewController6" customModule="PropertyAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uR0-Wr-Jtx"/>
+                        <viewControllerLayoutGuide type="bottom" id="k1e-SP-OXz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8TP-HH-P4g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="aUD-oO-C5X">
+                                <rect key="frame" x="14" y="617" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="radiusChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="YD1-0E-Spw"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="jWC-w7-sYq">
+                                <rect key="frame" x="14" y="571" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="lobeRadiusChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="6Qd-nN-tae"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="2" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="dWH-dD-X2T">
+                                <rect key="frame" x="14" y="524" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="lobeSliderChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="PxK-Wn-q2j"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sln-4X-rNe">
+                                <rect key="frame" x="310" y="435" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="animateSwitchChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="OOL-UE-840"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="B2Y-z8-Y6f">
+                                <rect key="frame" x="14" y="479" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="fudgeSliderChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="Ic0-pT-gAC"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="lobeRadius" destination="aUD-oO-C5X" id="mAa-gr-CTl"/>
+                        <outlet property="lobesSlider" destination="dWH-dD-X2T" id="DAX-Kg-m4Z"/>
+                        <outlet property="radius" destination="jWC-w7-sYq" id="axV-Sl-EvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rq1-Ct-X20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3512.8000000000002" y="-85.007496251874073"/>
         </scene>
     </scenes>
 </document>

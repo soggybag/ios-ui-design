@@ -4,19 +4,44 @@ UIKit provides a few ways to make things move. The number and variety of options
 with UIKit a bit of a jungle. To understand animation in UIKit it helps to work through the 
 available options methodically and consider why each option exists. I will try and do that here. 
 
-Animation can be broken down into a few categories. Each category may requires a different technique.
-Making things move, rotate, scale, fade in or out, can be handled setting properties and transforming
-an object. Animations that draw things on the screen, for example waves, birds flapping their wings,
-drawing graphs might require other techniques. 
+First let's look at what motion is on the computer. Animation can be broken down into a few 
+categories. Being able to examine a break down and identify which features are required to create
+a particular effect is the first step to success. 
 
-Generally speaking you will 
+**Motion Graphics**
+
+Motion graphic animation is generally where you are moving objects on the screen. In generally you 
+are changing an object's center, or frame, or using a transform to rotate or scale an object. 
+
+**Drawing - 
+
+Here is a short reference for the tools that might apply for different types of animation. In this 
+case you are drawing a shape like you are tracing a path. 
+
+**Frame based**
+
+This is the classic animation where you are showing a series of images one at a time like the frames 
+of a movie. 
+
+**Special Effects**
+
+Everything else falls here. Particle systems are a good example. Particles can be used to create 
+rain, stars, fairy dust, fire and more. Bluring, and other filter effects would also fall in this 
+category. 
 
 - Move and tranform objects on the screen.
     - Imagine objects sliding, rotating, scaling, and fading.
+    - Use: frame, center, transform, and UIView. 
 - Draw an object.
     - Imagine lines be being drawn, and shapes that morph. 
+    - Use: UIBezierPath, Core Graphics, and CABasicAnimation
 - Cycle through frames or video.
     - Imagine a flipbook of images each shown in succession. 
+    - Use: UIImage and UIImageView, AV
+- Special effects. 
+    - Particles, filter effects and more. The tools used here are hard to nail down. 
+    - Use: CAParticleLayer, Open GL (there is a specialized layer for this...), Blur and vibrancy 
+    effects.
 
 The section will focus on UIView.animate(). This method has a few options that allow you to animate
 most to things you will want to animate. It also provides a simple interface that easy to work with. 
@@ -70,7 +95,10 @@ animate an object tat has constraints applied to it there a couple strategies yo
 ## Project Challenge
 
 Take the ideas here and apply them to an iOS project you are working on. There several places you 
-can make use of these ideas. 
+can make use of these ideas. A good strategy is not to be overly abitious in what you want to 
+accomplish at first. Use this as an opportunity to explore new tools. 
+
+
 
 - Animate the elements one or more view controller screens. Animate the content elements into view
 one at a time. You can use the order you'd like your users to recognize them. This can help 
@@ -90,3 +118,47 @@ possible with UIView.animate() alone. Stick with tools we have covered so far:
         - alpha - transparency
         - transform - rotate, scale, and translate (move)
 
+Notes: Understanding how to recreate how to recreate animations you have found require understanding
+what tools are available and the tools can do. 
+
+- UIView
+    - The top level element for display. 
+- Layers
+    - CALayer is a lower level element that is where drawings are stored. 
+    - There are several specialized layers 
+        - CAShapeLayer : A layer that draws a path with a stroke and a fill. You can animate the 
+        drawing of the path. 
+        - CAGradientLayer : A Layer that draws a gradient. 
+        - CAEmitterLayer : renders animated particle systems. These can produce a wide range of 
+        effects made of many small moving images. Use this for fire, smoke, rain, fairy dust etc. 
+        - CAReplicatorLayer : A layer that creates copies of sublayers transformed and offset. 
+        Imagine the layer objects copied and animated. 
+        - CAScrollLayer : A layer specialized to scroll content larger than it's bounds. 
+        - CATiledLayer : This is a layer specialized to draw large content that might cahced at 
+        multiple leveles of detail. For instance the map view. 
+    - For even more control look into 
+        - CAEAGLLayer : A layer that supports OpenGL content. 
+        - CAMetalLayer : A layer that supports low level GPU-accelerated 3d graphics. 
+- UIBezierPath
+    - Draw a path with curves and straght lines. You can create object of any shape with stroke and 
+    fill. Think about drawing with Sketch, then imagine doing it in code. 
+- UIView.animate()
+    - Use this first. If you can animate something with this tool do it! It's easy flexible and 
+    efficient. 
+- CABasicAnimation
+    - Reach for this tool when you need to animate properties/features that are not supported by 
+    UIView.animate(). It's more work to use CABasicAnimation but you can animate just about any 
+    property. 
+    
+Some samples: 
+
+- Slide, fade, rotate, scale
+    - https://www.pinterest.com/mitchellhudson/ui-animation-slide-fade-rotate-scale/
+- Drawing 
+    - https://www.pinterest.com/mitchellhudson/ui-animation-draw/
+- Special Effects 
+    - https://www.pinterest.com/mitchellhudson/ui-animation-special-effects/
+    
+    
+    
+    

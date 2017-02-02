@@ -16,6 +16,7 @@ class CircleView: UIView {
     var value: Float = 0 {
         didSet {
             pathLayer.strokeEnd = CGFloat(value)
+            pathLayer.strokeStart = CGFloat(value - 0.25)
         }
     }
     
