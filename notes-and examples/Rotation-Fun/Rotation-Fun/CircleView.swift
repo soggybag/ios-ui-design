@@ -84,7 +84,7 @@ class CircleView: UIView {
         circleShapeLayer.strokeColor = UIColor.black.cgColor    // Stroke Color
         circleShapeLayer.fillColor = UIColor.clear.cgColor      // Fill color
         circleShapeLayer.lineWidth = 10                         // line width
-        circleShapeLayer.lineDashPattern = [1, 5]               // use a dashed line 1 pixel with 5 pixels spacing
+        circleShapeLayer.lineDashPattern = [2, 5]               // use a dashed line 1 pixel with 5 pixels spacing
         
     }
     

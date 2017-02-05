@@ -49,8 +49,7 @@ class ViewController: UIViewController {
         let vel = CGFloat(slider3.value)
         let x = view.bounds.width - 20 - (box1.bounds.width / 2)
         
-        box1.layer.removeAllAnimations()
-        print("????")
+        box1.layer.presentation()?.removeAllAnimations()
         
         UIView.animate(withDuration: time, delay: 0, usingSpringWithDamping: spring, initialSpringVelocity: vel, options: [.repeat], animations: {
             self.box1.center.x = x
@@ -61,12 +60,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        
     }
 
 
