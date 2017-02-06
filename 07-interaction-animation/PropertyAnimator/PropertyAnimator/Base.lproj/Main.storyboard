@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Foa-3n-ald">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PropertyAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="106"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="zlV-OX-uZd">
+            <objects>
+                <viewController id="IL2-1G-GS2" customClass="ViewController2" customModule="PropertyAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TK8-CR-r3v"/>
+                        <viewControllerLayoutGuide type="bottom" id="QzA-Qp-CSY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sgs-RL-4cg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AuT-4s-yrk">
+                                <rect key="frame" x="14" y="552" width="347" height="31"/>
+                                <connections>
+                                    <action selector="slider:" destination="IL2-1G-GS2" eventType="valueChanged" id="eBL-gT-HyN"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AuT-4s-yrk" firstAttribute="leading" secondItem="sgs-RL-4cg" secondAttribute="leadingMargin" id="09w-Oj-zTu"/>
+                            <constraint firstItem="QzA-Qp-CSY" firstAttribute="top" secondItem="AuT-4s-yrk" secondAttribute="bottom" constant="85" id="F7i-Ze-3va"/>
+                            <constraint firstItem="AuT-4s-yrk" firstAttribute="trailing" secondItem="sgs-RL-4cg" secondAttribute="trailingMargin" id="LOV-Gl-IpB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dpp-Ca-W9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="106"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="mrF-f6-CeV">
+            <objects>
+                <viewController id="Mnw-ko-wp3" customClass="ViewController3" customModule="PropertyAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EVn-jh-LIi"/>
+                        <viewControllerLayoutGuide type="bottom" id="QTb-Vl-fZE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mIM-dC-Dfp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBL-fq-7jH">
+                                <rect key="frame" x="67" y="100" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.53789605034722221" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ds5-Fx-RfW">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26763237847222221" green="0.53789605029999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVr-JL-ZeW">
+                                <rect key="frame" x="67" y="454" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.092556423611111105" green="0.79847547738333324" blue="0.3882107204861111" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="a" destination="PBL-fq-7jH" id="WAH-o0-x5m"/>
+                        <outlet property="b" destination="Ds5-Fx-RfW" id="ljg-E3-0Sd"/>
+                        <outlet property="c" destination="KVr-JL-ZeW" id="yyQ-30-X5H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYO-Df-89d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="106"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="Ytz-od-aVC">
+            <objects>
+                <viewController id="XL9-yn-3V2" customClass="ViewController4" customModule="PropertyAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tfa-Va-JCe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qca-CJ-S6f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xb4-mm-BkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5TY-s9-Ejw">
+                                <rect key="frame" x="67" y="92" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.53789605029999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vY6-7I-cGN">
+                                <rect key="frame" x="67" y="261" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26763237849999999" green="0.53789605029999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpP-bb-U36">
+                                <rect key="frame" x="67" y="446" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.092556423609999994" green="0.79847547740000002" blue="0.38821072049999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="a" destination="5TY-s9-Ejw" id="y5L-mH-sZA"/>
+                        <outlet property="b" destination="vY6-7I-cGN" id="q1s-wK-jM5"/>
+                        <outlet property="c" destination="IpP-bb-U36" id="5Xx-cg-AP9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HqG-ZN-ISS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2458" y="106"/>
+        </scene>
+        <!--View Controller6-->
+        <scene sceneID="sFr-oo-VLV">
+            <objects>
+                <viewController id="Foa-3n-ald" customClass="ViewController6" customModule="PropertyAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uR0-Wr-Jtx"/>
+                        <viewControllerLayoutGuide type="bottom" id="k1e-SP-OXz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8TP-HH-P4g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="aUD-oO-C5X">
+                                <rect key="frame" x="14" y="617" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="radiusChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="YD1-0E-Spw"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="jWC-w7-sYq">
+                                <rect key="frame" x="14" y="571" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="lobeRadiusChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="6Qd-nN-tae"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="2" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="dWH-dD-X2T">
+                                <rect key="frame" x="14" y="524" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="lobeSliderChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="PxK-Wn-q2j"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sln-4X-rNe">
+                                <rect key="frame" x="310" y="435" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="animateSwitchChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="OOL-UE-840"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="B2Y-z8-Y6f">
+                                <rect key="frame" x="14" y="479" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="fudgeSliderChanged:" destination="Foa-3n-ald" eventType="valueChanged" id="Ic0-pT-gAC"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="lobeRadius" destination="aUD-oO-C5X" id="mAa-gr-CTl"/>
+                        <outlet property="lobesSlider" destination="dWH-dD-X2T" id="DAX-Kg-m4Z"/>
+                        <outlet property="radius" destination="jWC-w7-sYq" id="axV-Sl-EvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rq1-Ct-X20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3512.8000000000002" y="-85.007496251874073"/>
+        </scene>
+    </scenes>
+</document>
