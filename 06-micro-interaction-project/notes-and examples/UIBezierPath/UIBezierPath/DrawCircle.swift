@@ -36,9 +36,18 @@ class DrawCircle: UIView {
         // Animate the circle by animating the strokeEnd. You can also animate stroke start...
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.duration = 5
-        animation.fromValue = 0
+        animation.fromValue = 0.1
         animation.toValue = 1
-        shapeLayer.add(animation, forKey: "strokeEnd")
+        shapeLayer.add(animation, forKey: nil)
+        
+        // Animate the stroke start to make a shorter segment follow the path.
+        /*
+        let b = CABasicAnimation(keyPath: "strokeStart")
+        b.duration = 5
+        b.fromValue = 0
+        b.toValue = 0.9
+        shapeLayer.add(b, forKey: nil)
+        */
     }
     
     

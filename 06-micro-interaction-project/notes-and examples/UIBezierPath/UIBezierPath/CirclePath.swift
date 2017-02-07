@@ -35,6 +35,9 @@ class CirclePath: UIView {
         shapeLayer.lineWidth = 16
         shapeLayer.strokeColor = UIColor.red.cgColor
         shapeLayer.fillColor = UIColor.orange.cgColor
+        
+        shapeLayer.strokeEnd = 0.5
+        shapeLayer.strokeStart = 0.25
     }
     
 
