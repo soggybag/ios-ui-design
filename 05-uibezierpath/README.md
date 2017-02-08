@@ -31,7 +31,14 @@ Also see the tutorials in this folder.
 
 ## Challenges
 
-- Draw a circle with a fill and stroke
-- Draw a rectangle
-- Draw a circle with a gradient fill
-- Use the ideas from the tutorial to work on your challenge project. 
+After watching the video and reading the notes try these challenges to test your knowledge. 
+Try and recreate eachq of the images below using UIBezierPath. Don't worry about the making 
+and exact replica, if you can get the major features and make something that looks close the 
+example you're doing well!
+
+- [Challenge 1](./challenge-1.png)
+- [Challenge 1](./challenge-2.png)
+- [Challenge 1](./challenge-3.png)
+- [Challenge 1](./challenge-4.png)
+- [Challenge 1](./challenge-5.png)
+- [Challenge 1](./challenge-6.png)
