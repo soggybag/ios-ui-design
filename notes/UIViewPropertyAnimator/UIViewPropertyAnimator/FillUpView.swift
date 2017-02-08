@@ -53,8 +53,8 @@ class FillUpView: UIView {
         let dif = displayLink.targetTimestamp - displayLink.timestamp
         // print(displayLink.timestamp - startTime)
         let c = Int(displayLink.timestamp - startTime)
-        // label.text = "\(c)"
-        // label2.text = label.text
+        label.text = "\(c)"
+        label2.text = label.text
     }
     
     func setupShape() {
