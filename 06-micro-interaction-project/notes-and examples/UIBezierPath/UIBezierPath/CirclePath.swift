@@ -10,14 +10,23 @@ import UIKit
 
 class CirclePath: UIView {
     
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setup()
+        // setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        // fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        
+        // setup()
+    }
+    
+    override func layoutSubviews() {
+        setup()
     }
     
     func setup() {

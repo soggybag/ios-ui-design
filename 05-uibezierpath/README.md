@@ -35,7 +35,3 @@ Also see the tutorials in this folder.
 - Draw a rectangle
 - Draw a circle with a gradient fill
 - Use the ideas from the tutorial to work on your challenge project. 
-
-
-
-
