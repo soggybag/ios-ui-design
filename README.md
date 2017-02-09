@@ -49,21 +49,29 @@ A choose your own adventure class covering UIKit components and more.
 - [Layers](./02-layers) - Where the pixels really live. 
     - A closer look at CALayer
         - CAGradientLayer, CATextLayer
-- [Inheritance and Composition](./03-subclass-composition) -   
-    - A look at how systems are combined in Swift
-- [Swift Initializers](./04-initializers)
-    - Designated and Convenience initializers
-    - Initializing properties
-    - Initializing a subclass and super class
-- [Interaction](./05-interaction) 
-    - Touch events and gestures
-- [UIControl](./06-uicontrol)
-    - Target Action pattern
-- 
+- [Animation](./03-motion) -   
+    - Making things move with UIKit
+- [Swift Initializers](./04-motion-circle-math)
+    - Mapping and animating things on the screen in circles. 
+- [UIBezierPath](./05-uibezierpath) 
+    - Drawing complex shapes with paths. 
+    - Animating paths
+- [Micro Interaction Project](./06-micro-interaction-project)
+    - Challenge yourself with a project of your own design. 
+    - Use this challenge to explore your own interests and apply the ideas covered so far. 
+- Making reusable things
+    - Subclass
+        - UIView 
+        - UIControl
+    - Write some useful initializers
+    - IBInspectible 
+    - IBDesignable
     
-   
 
 ## Projects and UI elements to build
+
+The ideas covered in this class can be used to build User Interface controls that you design. 
+Think about building any of the following things on the list below. 
 
 - Progress bar
     - Design a progress bar
@@ -85,7 +93,7 @@ A choose your own adventure class covering UIKit components and more.
 - Clock
 - Compass
   
-----
+
 
 - Math break
     - Addition, Subtraction, multiplication, and division
