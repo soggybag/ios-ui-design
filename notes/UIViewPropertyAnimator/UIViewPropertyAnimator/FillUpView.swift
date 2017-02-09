@@ -91,6 +91,8 @@ class FillUpView: UIView {
         addSubview(label)
         
         label.layer.mask = maskLayer
+        label.center.x = label.center.x + 10
+        label.center.y = label.center.y + 10
     }
     
     func makeLabel(color: UIColor) -> UILabel {

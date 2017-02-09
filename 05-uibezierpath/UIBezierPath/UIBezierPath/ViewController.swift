@@ -16,17 +16,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //let w = view.bounds.width - 40
+        let w = view.bounds.width - 40
         
-        //let rect = CGRect(x: 20, y: 20, width: w, height: w)
+        let rect = CGRect(x: 20, y: 20, width: w, height: w)
         
-        // let v = CirclePath(frame: rect)
-        //let v = DrawCircle(frame: rect)
+        let v = CirclePath(frame: rect)
+        // let v = DrawCircle(frame: rect)
         // let v = Centipede(frame: view.bounds)
         
-        // view.addSubview(v)
+        view.addSubview(v)
         
-        
+        /*
         let v = UIView(frame: CGRect(x: 40, y: 400, width: 200, height: 40))
         v.layer.cornerRadius = 20
         v.layer.borderColor = UIColor.black.cgColor
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         view.addSubview(a)
         
         UIView.transition(from: a, to: b, duration: 2, options: [], completion: nil)
-        
+        */
         
         /*
         let l = CALayer()

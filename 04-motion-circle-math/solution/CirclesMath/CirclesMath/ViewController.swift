@@ -26,11 +26,11 @@ class ViewController: UIViewController {
         // let circleView = CircleCircle4(frame: view.bounds)
         // view.addSubview(circleView)
         
-        // let circleView = CircleCircle5(frame: view.bounds)
-        // view.addSubview(circleView)
-        
-        let circleView = CircleCircle6(frame: view.bounds)
+        let circleView = CircleCircle5(frame: view.bounds)
         view.addSubview(circleView)
+        
+        // let circleView = CircleCircle6(frame: view.bounds)
+        // view.addSubview(circleView)
         
         // let formatter = NumberFormatter()
         // formatter.maximumSignificantDigits = 2
