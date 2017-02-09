@@ -1,17 +1,49 @@
 # UI Control project 
 
-This will be a project where you will design, code, and contribute a UI control to an open source 
-project. The project is a Make School open source library of iOS controls. The goal of the project
-is to collect a group of useful UI elements that will help people make better iOS apps faster. 
+The next project you work on will be a User Interface (UI) element of your own design. You will 
+design, code, and contribute your work to an open source project. 
 
+The goal of the *project* is to create collection of useful UI elements that will help you and other 
+developers make better looking apps faster. *Your* goal is learn about designing UI elements that 
+provide maximum use and flexibility and the tools required to do this.
 
+Taking the perspective that the UI element you design will see a wide variety use cases asks you 
+to provide a wider and more flexible solution than you would normally.
 
-Choose one of the UI elements from list. Or invent one of your own. You UI element should be flexible
-and provide options to set it's features. It should also provide properties and methods to control
-it's appearance and behavior. Try and provide sensible and usable options through Interface builder
-when it makes snese. 
+- IBDesignable
+    - Allows components to render themselves in storyboard. This will allow your component to be 
+    previewed in storyboard. 
+- IBInspectible
+    - Allows properties of your component to edited in storyboard without writing any code. 
+- Sub classing UIView, UIControl, UIButton, UIImageView ...
+    - Choosing a subclass will allow your component to easily gain functionality in line with it's 
+    proposed useage. You can sub class one of the built in UI elements to make a more useful 
+    version of that element. 
+- Implementing a logical set of initializers. 
+    - To be useful in many situations your component will need the ability to be configured with 
+    a range of values. Well written initializers make this intuitive and easy.  
+- Planning a sensible API for your UI component.
+    - Your component will have public properties and methods that control it's behavior. Well 
+    chosen property, method, and parameter names will make your component easy to work with and 
+    it's behavior intuitive.
+    
+## Write good code
 
-Your UI element should be able to initiate through code and through storyboard. 
+Use comments, write documentation with your work, follow a consistent style. 
+
+- Follow the style guide here:
+    - https://github.com/raywenderlich/swift-style-guide
+- Write documentation (this might not be what you think) read the following:
+    - http://nshipster.com/swift-documentation/
+
+## Choosing a UI component to create
+
+Choose one of the UI elements from the list below, or invent one of your own. Your component should 
+be easy to use, and configurable. It should be able to instantiate from code, or from storyboard. 
+It should provide options to configure it's use and appearance, and instantiate itself with sensible 
+default values with minimal input.
+
+Your component might have any of these features and provide 
 
 - Animates
     - Animation Speed
