@@ -35,6 +35,12 @@ Use comments, write documentation with your work, follow a consistent style.
     - https://github.com/raywenderlich/swift-style-guide
 - Write documentation (this might not be what you think) read the following:
     - http://nshipster.com/swift-documentation/
+    
+## Working with Github
+
+You'll submit your work via Github. Follow the instructions here: 
+
+- https://github.com/MakeSchool-18/Tweet-Generator
 
 ## Choosing a UI component to create
 
@@ -43,11 +49,11 @@ be easy to use, and configurable. It should be able to instantiate from code, or
 It should provide options to configure it's use and appearance, and instantiate itself with sensible 
 default values with minimal input.
 
-Your component might have any of these features and provide 
+Your component might have any of the features below. 
 
 - Animates
     - Animation Speed
-- Colors are set through the interface. 
+- Colors
     - Foreground color, background color stroke color, gradient colors
 - Gradients 
     - Elements that use a gradient fill will need to set the angle of the gradient. 
@@ -73,6 +79,7 @@ something that is not on the list.
 - Buttons
     - Extend the UIButton class to add features. You can add stroke, gradient fill or an animated 
     effect when the button tapped. 
+    - Make custom button with features that are not present in UIButton
 - Loading animation 
     - Think of any creative effect for a loading animation. 
         - Bonus make the effect configuable. For example rather than three bouncing circles, configure 
@@ -93,4 +100,7 @@ useful it will need to be configuarble.
     - Line graph
     - Pie chart
 - Clock
+    - Besides keeping time this could be used to display the time of an event or ?
+    - Could also be a timer to keep track of time for another feature of an app. 
 - Compass
+    - 
