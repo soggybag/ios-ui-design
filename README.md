@@ -41,23 +41,24 @@ further.
 
 A choose your own adventure class covering UIKit components and more.
 
-- [Intro](./00-intro) - Introduction/Review of UIView
-- [Frame, Bounds, and Center](./01-frame-bounds-center-color) - Managing display on the screen.
+- [Intro](./00-intro)
+- [Frame, Bounds, and Center](./01-frame-bounds-center-color)
     - Closer look at 
         - CGFloat, CGPoint, CGSize, CGRect, UIColor
         - frame, bounds, center
-- [Layers](./02-layers) - Where the pixels really live. 
+- [Layers](./02-layers) 
     - A closer look at CALayer
         - CAGradientLayer, CATextLayer
-- [Animation](./03-motion) -   
+- [Animation](./03-motion)
     - Making things move with UIKit
 - [Circle Math](./04-circle-math)
+    - Review basic trigonometry.
     - Mapping and animating things on the screen in circles. 
-- [UIBezierPath](./05-uibezierpath) 
+- [UIBezierPath](./05-uibezierpath)
     - Creating paths and drawing with code. 
-    - Animating paths
+    - Animating paths. 
 - [Micro Interaction Project](./06-micro-interaction-project)
     - Challenge yourself with a project of your own design. 
     - Use this challenge to explore your own interests and apply the ideas covered so far. 
-- [UI Control Project](./07-ui-control-project)
+- [UI Control Project](./07-ui-control-project) 
     - Making reusable controls and contributing open source. 
