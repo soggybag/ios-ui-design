@@ -3,33 +3,40 @@
 The next project you work on will be a User Interface (UI) element of your own design. You will 
 design, code, and contribute your work to an open source project. 
 
-The goal of the *project* is to create collection of useful UI elements that will help you and other 
-developers make better looking apps faster. *Your* goal is learn about designing UI elements that 
+The *goal of the project* is to create collection of useful UI elements that will help you and other 
+developers make better looking apps faster. *Your goal* is to learn about designing UI elements that 
 provide maximum use and flexibility and the tools required to do this.
 
-Taking the perspective that the UI element you design will see a wide variety use cases asks you 
-to provide a wider and more flexible solution than you would normally.
+From the perspective that the UI element you design will see a wide variety use cases
+you will need to provide a wider and more flexible solution than you would normally shoot for.
+Below are a list of some of the tools and concepts you should think about: 
 
-- IBDesignable
+- **IBDesignable**
     - Allows components to render themselves in storyboard. This will allow your component to be 
-    previewed in storyboard. 
-- IBInspectible
-    - Allows properties of your component to edited in storyboard without writing any code. 
-- Sub classing UIView, UIControl, UIButton, UIImageView ...
+    previewed in storyboard. This makes it easy for others to setup and configure your component.
+- **IBInspectible**
+    - Allows properties of your component to edited in storyboard without writing any code. This
+    makes it easy for others to use your component without having to write code. Combined with 
+    IBDesignable your component will be quick and easy to set up. 
+- **Sub classing UIView, UIControl, UIButton, UIImageView ...**
     - Choosing a subclass will allow your component to easily gain functionality in line with it's 
     proposed useage. You can sub class one of the built in UI elements to make a more useful 
     version of that element. 
-- Implementing a logical set of initializers. 
+- **Implementing a logical set of initializers.** 
     - To be useful in many situations your component will need the ability to be configured with 
     a range of values. Well written initializers make this intuitive and easy.  
-- Planning a sensible API for your UI component.
+- **Planning a sensible API for your UI component.**
     - Your component will have public properties and methods that control it's behavior. Well 
     chosen property, method, and parameter names will make your component easy to work with and 
     it's behavior intuitive.
+- **Documentation** 
+    - Writing documentation for your component will help explain it's operation. You can add 
+    documentation that shows up in the code editor _the same as the default library_. 
     
 ## Write good code
 
-Use comments, write documentation with your work, follow a consistent style. 
+Use comments, write documentation with your work, follow a consistent style. You are sharing your 
+code with others it needs to be clear, and well documented. 
 
 - Follow the style guide here:
     - https://github.com/raywenderlich/swift-style-guide
@@ -45,11 +52,13 @@ You'll submit your work via Github. Follow the instructions here:
 ## Choosing a UI component to create
 
 Choose one of the UI elements from the list below, or invent one of your own. Your component should 
-be easy to use, and configurable. It should be able to instantiate from code, or from storyboard. 
+be easy to use, and configurable. It should be able to instantiate from code, and from storyboard. 
 It should provide options to configure it's use and appearance, and instantiate itself with sensible 
 default values with minimal input.
 
-Your component might have any of the features below. 
+You must submit something by the end of the quarter!
+
+Your component might have any of the features below.
 
 - Animates
     - Animation Speed
@@ -103,4 +112,12 @@ useful it will need to be configuarble.
     - Besides keeping time this could be used to display the time of an event or ?
     - Could also be a timer to keep track of time for another feature of an app. 
 - Compass
-    - 
+    - Thing that points in a direction. Not sure this could be useful in some way. Maybe with maps?
+    
+## Challenges 
+
+- Make a UI Component 
+- Sub class one of the built in UI components
+- Comment your code
+- Include documentation
+
