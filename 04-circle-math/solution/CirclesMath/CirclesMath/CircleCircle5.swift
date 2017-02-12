@@ -28,16 +28,16 @@ class CircleCircle5: UIView {
         for i in 0 ..< totalCircles {
             let r = CGRect(x: 0, y: 0, width: circleSize, height: circleSize)
             let v = UILabel()
-            
+
             v.frame = r
             addSubview(v)
-            
+
             // Arrange the circles in a circle!
             let t = CGFloat(M_PI * 2) / CGFloat(totalCircles) * CGFloat(i)
             let x = sin(t) * ringRadius + c.x
             let y = cos(t) * ringRadius + c.y
             v.center = c
-            
+
             // Configure label
             v.textAlignment = .center
             v.numberOfLines = 0

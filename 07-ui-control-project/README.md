@@ -14,7 +14,7 @@ Below are a list of some of the tools and concepts you should think about:
 - **IBDesignable**
     - Allows components to render themselves in storyboard. This will allow your component to be 
     previewed in storyboard. This makes it easy for others to setup and configure your component.
-- **IBInspectible**
+- **IBInspectable**
     - Allows properties of your component to edited in storyboard without writing any code. This
     makes it easy for others to use your component without having to write code. Combined with 
     IBDesignable your component will be quick and easy to set up. 

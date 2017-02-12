@@ -17,7 +17,7 @@ also create their own customized UI elements that can be used in their own proje
 - Architect and arrange elements with CGPoint, CGRect, UIColor, frame, bounds, center etc. 
 - Build flexible UI controls using Subclasses while exploring initializers.
 - Modify and architect UI elements that are flexible using: @IBDesignable and
-@IBInspectible
+@IBInspectable
 
 ## Progress
 
