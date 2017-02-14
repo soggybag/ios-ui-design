@@ -116,7 +116,10 @@ useful it will need to be configuarble.
     
 ## Challenges 
 
-- Make a UI Component 
+- Define your UI component. Describe what it is you intend to make. 
+    - Add it to the MakeSchool-18 repo here: https://github.com/MakeSchool-18/ui-components 
+    - Make a folder with a README that includes your description. 
+- Make a UI Component
 - Sub class one of the built in UI components
 - Comment your code
 - Include documentation
