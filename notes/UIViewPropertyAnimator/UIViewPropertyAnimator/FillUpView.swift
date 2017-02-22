@@ -76,21 +76,23 @@ class FillUpView: UIView {
         let a = CABasicAnimation(keyPath: "path")
         a.fromValue = startPath.cgPath
         a.toValue = path.cgPath
-        a.duration = 5
+        a.duration = 8
         shapeLayer.add(a, forKey: nil)
         
         // Mask layer
         layer.addSublayer(maskLayer)
         
         maskLayer.path = path.cgPath
-        maskLayer.fillColor = UIColor.green.cgColor
+        maskLayer.fillColor = UIColor(red: 0.03, green: 1, blue: 0.12, alpha: 0.3).cgColor
         maskLayer.add(a, forKey: nil)
+        maskLayer.position.x = maskLayer.position.x + 10
+        maskLayer.position.y = maskLayer.position.y + 10
         
         // Label white
         label = makeLabel(color: UIColor.white)
         addSubview(label)
         
-        label.layer.mask = maskLayer
+        label.layer.mask = maskLayer // maskLayer becomes hidden
         label.center.x = label.center.x + 10
         label.center.y = label.center.y + 10
     }
